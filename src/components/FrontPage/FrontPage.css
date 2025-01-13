@@ -1,0 +1,90 @@
+/* General Styling */
+.front-page {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .birthday-message {
+    margin-bottom: 30px;
+  }
+  
+  .birthday-message h1 {
+    font-size: 2.5rem;
+    color: #ff4081;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+  }
+  
+  /* Image Container Styling */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .kissing-photo {
+    width: 100%;
+    max-width: 200px; /* Adjust size */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Fancy Text Styling */
+  .fancy-text {
+    font-family: 'Dancing Script', cursive; /* Fancy font */
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #555; /* Soft text color */
+    background: linear-gradient(45deg, #ffe4e1, #ffecec);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+  }
+  
+  /* Favorite Memories Styling */
+  .favorites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .birthday-message h1 {
+      font-size: 2rem;
+    }
+  
+    .fancy-text {
+      font-size: 1.2rem;
+      padding: 15px;
+    }
+  
+    .kissing-photo {
+      max-width: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .birthday-message h1 {
+      font-size: 1.8rem;
+    }
+  
+    .fancy-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      padding: 10px;
+    }
+  
+    .image-container {
+      flex-direction: column;
+    }
+  
+    .kissing-photo {
+      max-width: 100%;
+    }
+  }
+  

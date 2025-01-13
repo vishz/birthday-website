@@ -1,0 +1,43 @@
+/* MemoryCard.css */
+.memory-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .memory-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .memory-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .memory-card p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  
+  .memory-card:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .memory-card {
+      width: 180px;
+    }
+  
+    .memory-card h3 {
+      font-size: 1rem;
+    }
+  
+    .memory-card p {
+      font-size: 0.8rem;
+    }
+  }
+  

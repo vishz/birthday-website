@@ -1,0 +1,99 @@
+/* JourneyPage.css */
+.journey-page {
+    padding: 20px;
+  }
+  
+  .month-section {
+    margin-bottom: 40px;
+  }
+  
+  .memory-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .memory-card {
+    width: 200px; /* Adjust as needed */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .memory-card-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .memory-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .memory-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .memory-card-image {
+    position: relative;
+  }
+  
+  .memory-card-image img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .slider-controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  .slider-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+  }
+  
+  .slider-controls button:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .memory-card {
+      width: 100%;
+    }
+    .memory-card-image img {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .memory-card {
+      width: calc(33.33% - 10px); /* 3 cards per row on larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .memory-card {
+      width: calc(20% - 10px); /* 5 cards per row */
+    }
+  }
+  
